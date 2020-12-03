@@ -1,0 +1,24 @@
+@import '../../index.css';
+
+.section-heading {
+    display: inline-block;
+    text-align: center;
+    margin: 40px;
+}
+.section-heading h1 {
+    font-size: clamp(25px, 3vw, 45px);
+    font-weight: 600;
+    color: var(--lightest-slate);
+}
+
+.section-heading p {
+    color: var(--green);
+    margin-top: 10px;
+    font-family: var(--font-mono);
+}
+
+@media only screen and (max-width:450px) {
+    .section-heading {
+        margin: 0;
+    }
+}

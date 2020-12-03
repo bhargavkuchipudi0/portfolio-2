@@ -1,0 +1,110 @@
+@import '../../index.css';
+
+.main {
+    position: relative;
+    width: 100%;
+    min-height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+}
+.main-content {
+    position: relative;
+    padding-top: 100px;
+}
+.main-content::before, .main-content::after {
+    position: absolute;
+    font-family: "Homemade Apple";
+    color: var(--pale-yellow);
+
+}
+.main-content::before {
+    content: "<div>";
+    top: 45px;
+    left: -25px;
+}
+.main-content::after {
+    content: "<div/>";
+    bottom: -55px;
+    left: -25px;
+}
+
+.heading-1 {
+    font-size: 20px;
+    color: var(--green);
+    font-family: var(--font-mono);
+    font-weight: 300;
+    margin-left: 6px;
+}
+
+.heading-1, .heading-2, .heading-3, .text-1 {
+    opacity: 0;
+    animation: fadeUpAnimation 2s;
+    animation-fill-mode: forwards;
+}
+
+.heading-2, .heading-3, .text-1 {
+    margin-top: 7px;
+}
+
+.heading-2, .heading-3 {
+    font-size: clamp(30px, 8vw, 80px);
+}
+
+.heading-2 {
+    margin-top: 15px;
+    font-weight: 600;
+    color: var(--lightest-slate);
+}
+
+.heading-3 {
+    font-weight: 500;
+    color: var(--slate);
+}
+
+.text-1 {
+    margin-left: 6px;
+    margin-top: 15px;
+    max-width: 500px;
+    color: var(--slate);
+    font-size: 20px
+}
+
+@keyframes fadeUpAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.fadeup-1 {
+    animation-delay: 1s;
+}
+.fadeup-2 {
+    animation-delay: 1.2s;
+}
+.fadeup-3 {
+    animation-delay: 1.4s;
+}
+.fadeup-4 {
+    animation-delay: 1.6s;
+}
+
+@media only screen and (max-width:450px) {
+    .main-content {
+        padding: 0;
+    }
+    .text-1 {
+        font-size: 17px;
+    }
+    .heading-1 {
+        font-size: 17px;
+    }
+    .main-content::after, .main-content::before {
+        display: none;
+    }
+}
+

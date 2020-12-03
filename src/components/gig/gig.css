@@ -1,0 +1,48 @@
+@import '../../index.css';
+
+.gig {
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--lightest-navy);
+    border-radius: 7px;
+}
+.gig-top {
+    margin-bottom: 25px;
+}
+.gig-links {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.gig-heading {
+    margin-bottom: 10px;
+    color: var(--lightest-slate);
+    font-family: var(--font-sans);
+}
+.gig-text {
+    color: var(--light-slate);
+    /* line-height: 1.6; */
+    font-family: var(--font-sans);
+}
+.gig-tech {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.gig-tech p {
+    color: var(--slate);
+    padding: 0 10px;
+    font-size: 14px;
+    font-family: var(--font-mono);
+    color: var(--slate);
+}
+.gig-tech :nth-child(1) {
+    padding: 0;
+    padding-right: 10px;
+}

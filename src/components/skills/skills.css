@@ -1,0 +1,47 @@
+@import '../../index.css';
+
+.skills {
+    margin: 100px 0;
+}
+.skills-table {
+    margin-top: 40px;
+}
+.skills-table-cont p {
+    text-align: center;
+}
+.table-cont {
+    position: relative;
+    font-family: var(--font-mono);
+}
+.table-cont tr th, td {
+    width: 150px;
+    height: 30px;
+    text-align: left;
+    position: relative;
+}
+.table-cont tr th {
+    color: var(--lightest-slate);
+}
+.table-cont tr td {
+    color: var(--slate);
+    padding-left: 10px;
+}
+.table-cont tr td::before {
+    position: absolute;
+    content: "›";
+    top: 0;
+    left: -5px;
+    color: var(--green);
+    font-size: 20px;
+}
+
+.table-cont tr th:hover, .table-cont tr td:hover {
+    color: var(--green);
+}
+
+@media only screen and (max-width: 450px) {
+    .skills-table-cont {
+        margin-top: 30px;
+    }
+}
+

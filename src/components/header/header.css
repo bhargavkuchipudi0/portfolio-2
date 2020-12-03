@@ -1,0 +1,163 @@
+@import '../../index.css';
+.header {
+    height: 100px;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list {
+    display: flex;
+    flex-direction: row;
+}
+.list-item {
+    position: relative;
+    margin: 0 10px;
+    font: 15px var(--font-mono);
+    opacity: 0;
+    animation: fadeDown 1s;
+    animation-fill-mode: forwards;
+}
+
+.list-item ::after {
+    position: absolute;
+    content: "";
+    bottom: 0px;
+    right: 0;
+    width: 0px;
+    height: 1px;
+    background-color: var(--green);
+    transition: width .5s;
+}
+.list-item :hover::after {
+    width: 100%;
+}
+.list-item a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--lightest-slate);
+}
+
+@keyframes fadeDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.fadeDown-0 {
+    animation-delay: 0s;
+}
+.fadeDown-1 {
+    animation-delay: 0.2s;
+}
+.fadeDown-2 {
+    animation-delay: 0.4s;
+}
+.fadeDown-3 {
+    animation-delay: 0.6s;
+}
+.fadeDown-4 {
+    animation-delay: 0.8s;
+}
+
+/* Menu Toggle animation svg */
+.menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+  }
+  .line {
+    fill: none;
+    stroke: black;
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  .line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+  }
+  .line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  .opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+  .opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+  }
+  .opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+  .sm {
+      display: none;
+  }
+  /* Mobile responsive code */
+
+  @media only screen and (max-width: 450px) {
+      .nav {
+          display: none;
+      }
+      .sm {
+          z-index: 1;
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+        }
+        .ham-menu {
+          padding: 0 30px;
+      }
+      .menu-list {
+          display: none;
+          flex-direction: column;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          height: 50vh;
+          background-color: var(--navy);
+          animation: fadeDown 1s;
+          animation-fill-mode: forwards;
+        }
+        .cross {
+          flex: 0.2;
+          display: flex;
+          justify-content: flex-end;
+          padding: 10px 30px 0 30px;
+        }
+        .nav-sm-list {
+            flex: 0.8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid var(--slate);
+        }
+        .list {
+            flex-direction: column;
+        }
+        .disflex {
+            display: flex;
+        }
+
+  }

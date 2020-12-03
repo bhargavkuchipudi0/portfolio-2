@@ -1,0 +1,25 @@
+@import '../../index.css';
+.foot-cont {
+    flex-direction: column;
+    height: 70vh;
+    text-align: center;
+}
+.foot-cont > * {
+    margin-bottom: 30px;
+}
+
+.foot-cont p {
+    color: var(--green);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.foot-cont button:hover {
+    background-color: var(--green-tint);
+}
+
+@media only screen and (max-width: 450px) {
+    .footer {
+        margin-top: 100px;
+    }
+}

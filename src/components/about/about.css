@@ -1,0 +1,78 @@
+@import '../../index.css';
+
+.about-cont {
+    padding: 50px 0;
+}
+.about-sec {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+.about-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.about-right p {
+    font-size: 18px;
+    color: var(--slate);
+    margin: 10px 0;
+    display: inline-block;
+}
+
+.about-left {
+    position: relative;
+    width: 50%;
+}
+.image-holder {
+    position: relative;
+}
+.my-image {
+    width: 250px;
+    height: 250px;
+}
+.square {
+    width: 250px;
+    height: 250px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    border: 2px solid var(--green);
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: rotateSquare 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rotateSquare {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+/* Media Queries */
+
+@media only screen and (max-width:450px) {
+    .about-sec {
+        flex-direction: column;
+    }
+    .about-right, .about-left {
+        width: 100%;
+    }
+    .image-holder {
+        margin-top: 60px;
+    }
+    .my-image, .square {
+        width: 180px;
+        height: 180px;
+    }
+    .about-right p {
+        font-size: 15px;
+    }
+}
