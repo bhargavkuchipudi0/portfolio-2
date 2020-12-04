@@ -5,7 +5,6 @@
     width: 100%;
     min-height: calc(100vh - 100px);
     display: flex;
-    align-items: center;
 }
 .main-content {
     position: relative;
@@ -15,7 +14,7 @@
     position: absolute;
     font-family: "Homemade Apple";
     color: var(--pale-yellow);
-
+    opacity: .5;
 }
 .main-content::before {
     content: "<div>";
@@ -93,7 +92,10 @@
     animation-delay: 1.6s;
 }
 
-@media only screen and (max-width:450px) {
+@media only screen and (max-width:700px) {
+    .main {
+        align-items: center;
+    }
     .main-content {
         padding: 0;
     }

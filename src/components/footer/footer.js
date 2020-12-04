@@ -1,5 +1,5 @@
 import './footer.css';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 function Footer() {
     const [view, setView] = useState(false);
@@ -8,9 +8,10 @@ function Footer() {
         const rect = ele.getBoundingClientRect();
         if (rect.y + 200 - window.innerHeight < 0 && !view) setView(true);
     }
-    useEffect(() => {
-        window.addEventListener('scroll', isInViewPort);
-    });
+    function getInTouch() {
+        window.open('https://www.linkedin.com/in/bhargav-kuchipudi-389036b6/', '_blank');
+    }
+    window.addEventListener('scroll', isInViewPort);
     return (
         <footer className="footer">
             <div className="container">
@@ -18,7 +19,7 @@ function Footer() {
                     <h1 className={view ? 'elementFadeup' : 'zero-opac'}>Thankyou for scrolling so far!</h1>
                     <p  className={view ? 'elementFadeup-1' : 'zero-opac'}>What next?</p>
                     <h2  className={view ? 'elementFadeup-2' : 'zero-opac'}>Let's get in touch.</h2>
-                    <button  className={`default-btn ${view ? 'elementFadeup-2' : 'zero-opac'}`}> Say Hello!</button>
+                    <button  className={`default-btn ${view ? 'elementFadeup-2' : 'zero-opac'}`} onClick={() => {getInTouch()}}>Get in touch</button>
                 </div>
             </div>
         </footer>

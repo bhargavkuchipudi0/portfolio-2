@@ -1,7 +1,7 @@
 import './gig.css';
 import CubeSolid from '../../assets/cube-solid';
 import Github from '../../assets/github';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 function Gig({ work }) {
     const [view, setView] = useState(false);
@@ -10,9 +10,7 @@ function Gig({ work }) {
         const rect = ele.getBoundingClientRect();
         if (rect.y + 150 - window.innerHeight < 0 && !view) setView(true);
     }
-    useEffect(() => {
-        window.addEventListener('scroll', isInViewPort);
-    });
+    window.addEventListener('scroll', isInViewPort);
     return (
         <article id={`gig-${work.index}`} className={`gig ${view ? `elementFadeup${work.index%3 !== 0 ? '-' + work.index : ''}` : 'zero-opac'}`}>
             <div className="gig-top">

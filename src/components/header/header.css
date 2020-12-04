@@ -2,6 +2,19 @@
 .header {
     height: 100px;
 }
+.fixed {
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: var(--navy);
+    z-index: 1;
+    box-shadow: 0px 10px 8px var(--header-shadow);
+}
+.hide {
+    display: none;
+}
 .nav {
     display: flex;
     justify-content: center;
@@ -33,10 +46,13 @@
 .list-item :hover::after {
     width: 100%;
 }
-.list-item a {
+.list-item li {
+    display: inline-block;
+    padding-top: 10px;
+}
+.list-item p {
     display: inline-block;
     padding: 10px;
-    text-decoration: none;
     color: var(--lightest-slate);
 }
 
@@ -114,7 +130,7 @@
   }
   /* Mobile responsive code */
 
-  @media only screen and (max-width: 450px) {
+  @media only screen and (max-width: 700px) {
       .nav {
           display: none;
       }

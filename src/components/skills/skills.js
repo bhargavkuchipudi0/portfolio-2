@@ -1,6 +1,6 @@
 import './skills.css';
 import SectionHeading from '../section-heading/sectionheading';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 function Skills() {
     const [view, setView] = useState(false);
@@ -9,9 +9,7 @@ function Skills() {
         const rect = ele.getBoundingClientRect();
         if (rect.y + 200 - window.innerHeight < 0 && !view) setView(true);
     }
-    useEffect(() => {
-        window.addEventListener('scroll', isInViewPort);
-    });
+    window.addEventListener('scroll', isInViewPort);
     return (
         <section className="skills">
             <div className="container sm-container">

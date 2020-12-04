@@ -7,6 +7,7 @@
     bottom: 250px;
     left: -70px;
     transform: rotate(-90deg);
+    z-index: 1;
 }
 .fixed-mail p {
     position: relative;
@@ -35,6 +36,7 @@
     top: 150px;
     right: 50px;
     height: 170px;
+    z-index: 1;
 }
 .fixed-follow ul {
     height: 100%;
@@ -78,7 +80,7 @@
 
 /* Mobile Media Queries */
 
-@media only screen and (max-width:450px) {
+@media only screen and (max-width:700px) {
     .fixed-mail, .fixed-follow {
         display: none;
     }

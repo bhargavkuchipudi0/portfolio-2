@@ -1,7 +1,7 @@
 import './about.css';
 import MyImage from '../../assets/my-image.png';
 import SectionHeading from '../section-heading/sectionheading';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 function About() {
     const [view, setView] = useState(false);
@@ -10,9 +10,7 @@ function About() {
         const rect = ele.getBoundingClientRect();
         if (rect.y + 200 - window.innerHeight < 0 && !view) setView(true);
     }
-    useEffect(() => {
-        window.addEventListener('scroll', isInViewPort);
-    });
+    window.addEventListener('scroll', isInViewPort);
     return (
         <section className="about">
             <div className="container">

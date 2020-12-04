@@ -1,7 +1,7 @@
 import './work.css';
 import SectionHeading from '../section-heading/sectionheading';
 import Gig from '../gig/gig';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 function Work() {
     const mywork = [
@@ -36,9 +36,7 @@ function Work() {
         const rect = ele.getBoundingClientRect();
         if (rect.y + 200 - window.innerHeight < 0 && !view) setView(true);
     }
-    useEffect(() => {
-        window.addEventListener('scroll', isInViewPort);
-    });
+    window.addEventListener('scroll', isInViewPort);
     return (
         <section className="work">
             <div className="container sm-container">

@@ -1,6 +1,14 @@
 import './main.css';
 
 function Main() {
+    const sayHello = function () {
+        var link = "mailto:bhargavkuchipudi0@gmail.com"
+            + "?cc=myCCaddress@example.com"
+            + "&subject= My Portfolio"
+            + "&body= Hello!!"
+            ;
+        window.open(link, '_blank');
+    }
     return (
         <section className="main">
             <div className="container sm-container">
@@ -12,7 +20,7 @@ function Main() {
                         <p className="text-1 fadeup-4">
                             I’m a full stack web developer based in Detroit, MI specializing in designing, developing and maintaining exceptional web sites, applications, and everything in between.
                         </p>
-                        <button className="default-btn">Get in Touch</button>
+                        <button className="default-btn" onClick={() => { sayHello() }}>Say Hello!</button>
                     </div>
                 </section>
             </div>

@@ -15,6 +15,7 @@ html {
   --green-tint: rgba(100,255,218,0.1);
   --navy: #0a192f;
   --lightest-navy: #172a45;
+  --header-shadow: rgba(2,12,27,0.7);
   --slate: #8892b0;
   --light-slate: #a8b2d1;
   --lightest-slate: #ccd6f6;
@@ -94,7 +95,7 @@ button {
   animation-fill-mode: forwards;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 700px) {
   p {
     font-size: 15px;
   }

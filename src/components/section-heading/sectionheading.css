@@ -17,7 +17,7 @@
     font-family: var(--font-mono);
 }
 
-@media only screen and (max-width:450px) {
+@media only screen and (max-width:700px) {
     .section-heading {
         margin: 0;
     }

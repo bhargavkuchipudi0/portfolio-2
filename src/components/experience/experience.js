@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './experience.css';
 import SectionHeading from '../section-heading/sectionheading';
 
@@ -10,9 +10,7 @@ function Experience() {
         const rect = ele.getBoundingClientRect();
         if (rect.y + 200 - window.innerHeight < 0 && !view) setView(true);
     }
-    useEffect(() => {
-        window.addEventListener('scroll', isInViewPort);
-    });
+    window.addEventListener('scroll', isInViewPort);
     return (
         <section className="experience">
             <div className="container sm-container">
