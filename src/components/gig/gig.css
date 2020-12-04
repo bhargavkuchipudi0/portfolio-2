@@ -25,6 +25,11 @@
     color: var(--lightest-slate);
     font-family: var(--font-sans);
 }
+.publication {
+    font-weight: bold;
+    font-family: var(--font-mono);
+    color: var(--green);
+}
 .gig-text {
     color: var(--light-slate);
     /* line-height: 1.6; */
