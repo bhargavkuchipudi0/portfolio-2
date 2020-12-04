@@ -9,7 +9,7 @@ function Gig({ work }) {
     function isInViewPort() {
         const ele = document.querySelector(`#gig-${work.index}`);
         const rect = ele.getBoundingClientRect();
-        if (rect.y + 150 - window.innerHeight < 0 && !view) setView(true);
+        if (rect.y + 100 - window.innerHeight < 0 && !view) setView(true);
     }
     const openLink = function(link) {
         window.open(link, '_blank');
