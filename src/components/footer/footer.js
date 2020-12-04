@@ -6,7 +6,7 @@ function Footer() {
     function isInViewPort() {
         const ele = document.querySelector('.footer');
         const rect = ele.getBoundingClientRect();
-        if (rect.y + 200 - window.innerHeight < 0 && !view) setView(true);
+        if (rect.y + 150 - window.innerHeight < 0 && !view) setView(true);
     }
     function getInTouch() {
         window.open('https://www.linkedin.com/in/bhargav-kuchipudi-389036b6/', '_blank');

@@ -29,7 +29,7 @@
     margin: 0 10px;
     font: 15px var(--font-mono);
     opacity: 0;
-    animation: fadeDown 1s;
+    animation: fadeDown 0.5s;
     animation-fill-mode: forwards;
 }
 

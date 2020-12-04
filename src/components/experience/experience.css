@@ -27,7 +27,7 @@
 .exp-list ul li:hover > button {
     color: var(--green);
 }
-.exp-list button {
+.exp-btn {
     width: 100%;
     height: 100%;
     background-color: transparent;
@@ -43,7 +43,8 @@
 }
 
 .button-active {
-    color: var(--green) !important;
+    color: var(--green);
+    background-color: var(--green-tint);
 }
 .exp-cont-sec {
     padding-left: 20px;

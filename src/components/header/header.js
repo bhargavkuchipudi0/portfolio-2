@@ -17,11 +17,11 @@ function Header({ headerType }) {
     function List() {
         return (
             <ul className="list">
-                <li className="pointer list-item fadeDown-0" onClick={() => { navigate('about') }}><p>About</p></li>
-                <li className="pointer list-item fadeDown-1" onClick={() => { navigate('skills') }}><p>Skills</p></li>
-                <li className="pointer list-item fadeDown-2" onClick={() => { navigate('experience') }}><p>Experience</p></li>
-                <li className="pointer list-item fadeDown-3" onClick={() => { navigate('work') }}><p>Work</p></li>
-                <li className="pointer list-item fadeDown-4" onClick={() => { navigate('footer') }}><p>Contact</p></li>
+                <li className={`pointer list-item ${headerType === 2 ? 'fadeDown-0' : null}`} onClick={() => { navigate('about') }}><p>About</p></li>
+                <li className={`pointer list-item ${headerType === 2 ? 'fadeDown-1' : null}`} onClick={() => { navigate('skills') }}><p>Skills</p></li>
+                <li className={`pointer list-item ${headerType === 2 ? 'fadeDown-2' : null}`} onClick={() => { navigate('experience') }}><p>Experience</p></li>
+                <li className={`pointer list-item ${headerType === 2 ? 'fadeDown-3' : null}`} onClick={() => { navigate('work') }}><p>Work</p></li>
+                <li className={`pointer list-item ${headerType === 2 ? 'fadeDown-4' : null}`} onClick={() => { navigate('footer') }}><p>Contact</p></li>
             </ul>
         );
     }

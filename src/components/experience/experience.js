@@ -8,7 +8,7 @@ function Experience() {
     function isInViewPort() {
         const ele = document.querySelector('.experience');
         const rect = ele.getBoundingClientRect();
-        if (rect.y + 200 - window.innerHeight < 0 && !view) setView(true);
+        if (rect.y + 150 - window.innerHeight < 0 && !view) setView(true);
     }
     window.addEventListener('scroll', isInViewPort);
     return (
@@ -21,9 +21,9 @@ function Experience() {
                     <div className={`exp-bot flex ${view ? 'elementFadeup-1' : 'zero-opac'}`}>
                         <div className="exp-list flex">
                             <ul>
-                                <li><button className={button === 'cmu' ? "button-active" : null} onClick={() => { toggleButton('cmu') }}>CMU</button></li>
-                                <li><button className={button === 'techolution' ? "button-active" : null} onClick={() => { toggleButton('techolution') }}>Techolution</button></li>
-                                <li><button className={button === 'asteriisc' ? "button-active" : null} onClick={() => { toggleButton('asteriisc') }}>Asteriisc</button></li>
+                                <li><button className={`exp-btn ${button === 'cmu' ? "button-active" : null}`} onClick={() => { toggleButton('cmu') }}>CMU</button></li>
+                                <li><button className={`exp-btn ${button === 'techolution' ? "button-active" : null}`} onClick={() => { toggleButton('techolution') }}>Techolution</button></li>
+                                <li><button className={`exp-btn ${button === 'asteriisc' ? "button-active" : null}`} onClick={() => { toggleButton('asteriisc') }}>Asteriisc</button></li>
                             </ul>
                         </div>
                         <div className="exp-cont-main">

@@ -7,7 +7,7 @@ function Skills() {
     function isInViewPort() {
         const ele = document.querySelector('.skills');
         const rect = ele.getBoundingClientRect();
-        if (rect.y + 200 - window.innerHeight < 0 && !view) setView(true);
+        if (rect.y + 150 - window.innerHeight < 0 && !view) setView(true);
     }
     window.addEventListener('scroll', isInViewPort);
     return (
