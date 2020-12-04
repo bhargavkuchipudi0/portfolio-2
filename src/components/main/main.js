@@ -20,7 +20,7 @@ function Main() {
                         <p className="text-1 fadeup-4">
                             I’m a full stack web developer based in Detroit, MI specializing in designing, developing and maintaining exceptional web sites, applications, and everything in between.
                         </p>
-                        <button className="default-btn" onClick={() => { sayHello() }}>Say Hello!</button>
+                        <button className="default-btn mg-l-7" onClick={() => { sayHello() }}>Say Hello!</button>
                     </div>
                 </section>
             </div>

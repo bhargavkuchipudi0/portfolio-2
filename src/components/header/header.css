@@ -131,6 +131,9 @@
   /* Mobile responsive code */
 
   @media only screen and (max-width: 700px) {
+      .header {
+          height: 55px;
+      }
       .nav {
           display: none;
       }
@@ -160,7 +163,7 @@
           flex: 0.2;
           display: flex;
           justify-content: flex-end;
-          padding: 10px 30px 0 30px;
+          padding: 0 30px;
         }
         .nav-sm-list {
             flex: 0.8;
