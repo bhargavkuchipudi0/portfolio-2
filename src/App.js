@@ -7,10 +7,7 @@ import Experience from './components/experience/experience';
 import Work from './components/work/work';
 import Footer from './components/footer/footer';
 
-import Github from './assets/github';
-import Instagram from './assets/instagram';
-import Linkedin from './assets/linkedin';
-import Twitter from './assets/twitter';
+import { GitHub, Instagram, Linkedin, Twitter } from './assets/svg';
 import { useState } from 'react';
 
 function App() {
@@ -36,7 +33,7 @@ function App() {
         </div>
         <div className="fixed-follow">
           <ul>
-            <li className="pointer" onClick={() => {openTab('github')}}><Github width="20px"/></li>
+            <li className="pointer" onClick={() => {openTab('github')}}><GitHub width="20px"/></li>
             <li className="pointer" onClick={() => {openTab('linkedin')}}><Linkedin width="20px"/></li>
             <li className="pointer" onClick={() => {openTab('twitter')}}><Twitter width="20px"/></li>
             <li className="pointer" onClick={() => {openTab('instagram')}}><Instagram width="20px"/></li>

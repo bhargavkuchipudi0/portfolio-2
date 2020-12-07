@@ -1,5 +1,5 @@
 import './header.css';
-import { MenuIcon, CrossIcon } from '../../assets/menu';
+import { MenuIcon, CrossIcon } from '../../assets/svg';
 import { useState } from 'react';
 
 function Header({ headerType }) {
@@ -7,9 +7,10 @@ function Header({ headerType }) {
     var navigate = function (data) {
         ifOnMobile();
         const ele = document.querySelector(`.${data}`);
-        ele.scrollIntoView({ block: 'center', behavior: 'smooth' });
+        const block = data === 'work' ? 'start' : 'center';
+        ele.scrollIntoView({ block, behavior: 'smooth' });
     }
-    var ifOnMobile = function() {
+    var ifOnMobile = function () {
         if (window.innerWidth <= 700) {
             setshowMenu(false);
         }

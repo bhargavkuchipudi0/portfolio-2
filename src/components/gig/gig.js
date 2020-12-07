@@ -1,7 +1,5 @@
 import './gig.css';
-import CubeSolid from '../../assets/cube-solid';
-import Link from '../../assets/link-solid';
-import Github from '../../assets/github';
+import { CubeSolid, Link, GitHub } from '../../assets/svg';
 import { useState } from 'react';
 
 function Gig({ work }) {
@@ -28,7 +26,7 @@ function Gig({ work }) {
                     {
                         work.type === 'publication' ? (
                         <div className="pointer" onClick={() => {openLink(work.link)}}><Link width="20px" /></div>
-                        ) : <div className="pointer" onClick={() => {openLink(work.link)}}><Github width="20px" /></div>
+                        ) : <div className="pointer" onClick={() => {openLink(work.link)}}><GitHub width="20px" /></div>
                     }
                 </div>
                 <div className="gig-content">
