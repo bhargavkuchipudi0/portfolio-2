@@ -24,13 +24,21 @@ function Work() {
         {
             index: 2,
             heading: 'Personal Website - Vesion 2',
-            text: 'My first portfolio website. Designed and developed using Figma and React. ',
+            text: 'Designed and developed using Figma and React. Even though it is a static site, building this portfolio with react makes it more flexible, simple, and organised.',
             tools: ['React', 'HTML', 'CSS', 'Figma'],
             link: 'https://github.com/bhargavkuchipudi0/portfolio-2',
             type: 'personal'
         },
         {
             index: 3,
+            heading: 'Accu-Weather | Weather App',
+            text: 'Yet another weather app with Vue.js. With this application, you can look up the weather around the world by city name. It is a simple and minimalistic app built to get my self started with a new framework (Vue.js)',
+            tools: ['Vue.js', 'Chart.js', 'JavaScript', 'HTML', 'CSS'],
+            link: 'https://accu-weather.netlify.app/',
+            type: 'personal'
+        },
+        {
+            index: 4,
             heading: 'Fast News Now',
             text: 'This is a front end application built with React JS using Newsapi.org developer api. I have integrated the filter module to search betweeen different categories and sources (CNN, BBC NEws, ESPN, The Hindu, etc..,).',
             tools: ['React', 'Newsapi', 'HTML', 'CSS'],
@@ -38,7 +46,7 @@ function Work() {
             type: 'personal'
         },
         {
-            index: 4,
+            index: 5,
             heading: 'COVID-19 Automation script for live update',
             text: 'A simple python automation script for COVID-19 that scraps few sites for the data and triggers an email to the list of people signed up for.',
             tools: ['Python', 'Automation', 'AWS'],
@@ -46,13 +54,14 @@ function Work() {
             type: 'personal'
         },
         {
-            index: 5,
+            index: 6,
             heading: 'Using AI for More Accurate COVID-19 Forecasting',
             text: 'Used different Machine learning models to predict the forecast of COVID-19 in United States. I have used Linear Regression, Support Vector Machines(SVM), and Bayesian Ridge Regression for the forecast.',
             tools: ['Python', 'Machine Learning'],
             link: 'https://www.linkedin.com/posts/bhargav-kuchipudi-389036b6_machineabrlearning-predictiveanalytics-stayhomesaveslives-activity-6656622775802925056-hS9c',
             type: 'personal'
-        }
+        },
+        
     ]
     const [view, setView] = useState(false);
     function isInViewPort() {
