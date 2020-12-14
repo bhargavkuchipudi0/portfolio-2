@@ -30,6 +30,12 @@
     font-family: var(--font-mono);
     color: var(--green);
 }
+.repo-link {
+    display: flex;
+}
+.link {
+    margin-left: 15px;
+}
 .gig-text {
     color: var(--light-slate);
     /* line-height: 1.6; */

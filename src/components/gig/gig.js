@@ -9,25 +9,24 @@ function Gig({ work }) {
         const rect = ele.getBoundingClientRect();
         if (rect.y + 100 - window.innerHeight < 0 && !view) setView(true);
     }
-    const openLink = function(link) {
+    const openLink = function (link) {
         window.open(link, '_blank');
     }
     window.addEventListener('scroll', isInViewPort);
     return (
-        <article id={`gig-${work.index}`} className={`gig ${view ? `elementFadeup${work.index % 3 !== 0 ? '-' + work.index%3 : ''}` : 'zero-opac'}`}>
+        <article id={`gig-${work.index}`} className={`gig ${view ? `elementFadeup${work.index % 3 !== 0 ? '-' + work.index % 3 : ''}` : 'zero-opac'}`}>
             <div className="gig-top">
                 <div className="gig-links">
                     <CubeSolid />
                     {
                         work.type === 'publication' ? (
-                        <p className="publication">Publication</p>
+                            <p className="publication">Publication</p>
                         ) : null
                     }
-                    {
-                        work.type === 'publication' ? (
-                        <div className="pointer" onClick={() => {openLink(work.link)}}><Link width="20px" /></div>
-                        ) : <div className="pointer" onClick={() => {openLink(work.link)}}><GitHub width="20px" /></div>
-                    }
+                    <div className="repo-link">
+                        {work.repo && <div className="pointer" onClick={() => { openLink(work.repo) }}><GitHub width="20px" /></div>}
+                        {work.link && <div className="pointer link" onClick={() => { openLink(work.link) }}><Link width="20px" /></div>}
+                    </div>
                 </div>
                 <div className="gig-content">
                     <h1 className="gig-heading">
