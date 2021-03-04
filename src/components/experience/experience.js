@@ -28,27 +28,30 @@ function Experience() {
                         </div>
                         <div className="exp-cont-main">
                             <div className={button === 'cmu' ? "exp-cont-sec" : "display-none"}>
-                                <p className="exp-head">Research Assistant <span className="green">@ Central Michigan University</span></p>
-                                <p className="exp-cont-date">January 2020 - present</p>
+                                <p className="exp-head">Front End Developer <span className="green">@ Central Michigan University</span></p>
+                                <p className="exp-cont-date">September 2019 - present</p>
                                 <ul className="exp-cont-list">
                                     <li>
                                         <p>
-                                            Tasked to research on topics and issues as delegated by the Head of the Department of Computer Science.
+                                            Designed and Developed Single Page Application (SPA) using React.JS, JavaScript, HTML5, CSS3, SCSS, and
+                                            Redux.
                                             </p>
                                     </li>
                                     <li>
                                         <p>
-                                            Developed a text-mining program to classify, clean and visualize large datasets.
+                                            Implemented React-Redux for managing state and reinforced the logic of having a global state and shared
+                                            information among components from a single location.
                                             </p>
                                     </li>
                                     <li>
                                         <p>
-                                            Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Python, React, Node.js.
+                                            Worked with JSON web tokens for authentication and authorization security configurations using Node.js
                                             </p>
                                     </li>
                                     <li>
                                         <p>
-                                            Working with Linux and high-performance computing.
+                                            Responsible for executing unit test cases and end-to-end using front-end test framework Jasmine with the Karma
+                                            test runner
                                             </p>
                                     </li>
                                 </ul>
@@ -82,7 +85,7 @@ function Experience() {
                             </div>
                             <div className={button === 'asteriisc' ? "exp-cont-sec" : "display-none"}>
                                 <p className="exp-head">Web developer <span className="green">@ Asteriisc Technologies</span></p>
-                                <p className="exp-cont-date">November 2017 - May 2018</p>
+                                <p className="exp-cont-date">May 2016 - May 2018</p>
                                 <ul className="exp-cont-list">
                                     <li>
                                         <p>
