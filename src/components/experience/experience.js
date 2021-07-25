@@ -3,7 +3,7 @@ import './experience.css';
 import SectionHeading from '../section-heading/sectionheading';
 
 function Experience() {
-    const [button, toggleButton] = useState('cmu');
+    const [button, toggleButton] = useState('walmart');
     const [view, setView] = useState(false);
     function isInViewPort() {
         const ele = document.querySelector('.experience');
@@ -21,15 +21,15 @@ function Experience() {
                     <div className={`exp-bot flex ${view ? 'elementFadeup-1' : 'zero-opac'}`}>
                         <div className="exp-list flex">
                             <ul>
-                                <li><button className={`exp-btn ${button === 'cmu' ? "button-active" : null}`} onClick={() => { toggleButton('cmu') }}>CMU</button></li>
+                                <li><button className={`exp-btn ${button === 'walmart' ? "button-active" : null}`} onClick={() => { toggleButton('walmart') }}>Walmart</button></li>
                                 <li><button className={`exp-btn ${button === 'techolution' ? "button-active" : null}`} onClick={() => { toggleButton('techolution') }}>Techolution</button></li>
                                 <li><button className={`exp-btn ${button === 'asteriisc' ? "button-active" : null}`} onClick={() => { toggleButton('asteriisc') }}>Asteriisc</button></li>
                             </ul>
                         </div>
                         <div className="exp-cont-main">
-                            <div className={button === 'cmu' ? "exp-cont-sec" : "display-none"}>
-                                <p className="exp-head">Front End Developer <span className="green">@ Central Michigan University</span></p>
-                                <p className="exp-cont-date">September 2019 - present</p>
+                            <div className={button === 'walmart' ? "exp-cont-sec" : "display-none"}>
+                                <p className="exp-head">Software Engineer - III <span className="green">@ Walmart Global Tech</span></p>
+                                <p className="exp-cont-date">July 2021 - present</p>
                                 <ul className="exp-cont-list">
                                     <li>
                                         <p>
@@ -50,8 +50,7 @@ function Experience() {
                                     </li>
                                     <li>
                                         <p>
-                                            Responsible for executing unit test cases and end-to-end using front-end test framework Jasmine with the Karma
-                                            test runner
+                                            Responsible for executing unit test cases and end-to-end using React Testing Library and Test Cafe.
                                             </p>
                                     </li>
                                 </ul>

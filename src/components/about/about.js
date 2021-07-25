@@ -1,5 +1,5 @@
 import './about.css';
-import MyImage from '../../assets/my-image.png';
+import MyImage from '../../assets/my-image.jpg';
 import SectionHeading from '../section-heading/sectionheading';
 import { useState } from 'react';
 
@@ -21,10 +21,10 @@ function About() {
                     <div className="about-sec">
                         <div className={`about-right ${view ? 'elementFadeup' : 'zero-opac'}`}>
                             <p>
-                                Hello! I’m Bhargav Kuchipudi, a full stack web developer based in Detroit, MI.
+                                Hello! I’m Bhargav Kuchipudi, a full stack web developer based in Sunnyvale, CALIFORNIA.
                             </p>
                             <p>
-                                I am a graduate student persuing Masters in Computer Science <span className="green">@ Central Michigan University</span>, I combine my education with 3 years of experience as front-end web developer.
+                                I am working as a Software Engineer <span className="green">@ Walmart Global Tech</span>, I combine my education with 3 years of experience as front-end web developer.
                             </p>
                             <p>
                                 I love applying responsive design principle and watching my web pages shrink into mobile screens. It's oddly satisfying.

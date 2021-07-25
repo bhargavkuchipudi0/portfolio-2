@@ -18,7 +18,7 @@ function Main() {
                         <h2 className="heading-2 fadeup-2">Bhargav Kuchipudi.</h2>
                         <h3 className="heading-3 fadeup-3">Full Stack Web Developer.</h3>
                         <p className="text-1 fadeup-4">
-                            I’m a full stack web developer based in Detroit, MI specializing in designing, developing and maintaining exceptional web sites, applications, and everything in between.
+                            I’m a full stack web developer based in Sunnyvale, CA specializing in designing, developing and maintaining exceptional web sites, applications, and everything in between.
                         </p>
                         <button className="default-btn mg-l-7" onClick={() => { sayHello() }}>Say Hello!</button>
                     </div>
